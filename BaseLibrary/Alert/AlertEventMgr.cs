@@ -21,6 +21,6 @@ namespace VAdvantage.Alert
         /// <param name="document">document</param>
         /// <param name="AD_Table_ID">table</param>
         /// <returns> true if WF started</returns>
-        bool Process(bool newRecord, PO document, int AD_Table_ID,List<(int ColumnId, string ColumnName)> columnIds, bool isDeleted);
+        bool Process(PO document, POInfo pinfo,string eventType);
     }
 }

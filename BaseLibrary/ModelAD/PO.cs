@@ -2786,50 +2786,18 @@ namespace VAdvantage.Model
                 //}
                 //if (s_docWFMgr != null)
                 //    s_docWFMgr.Process(this, p_info.getAD_Table_ID());
-                ExecuteWF();               
-                //	Copy to Old values
-                int size = p_info.GetColumnCount();
-                List<(int ColumnId, string ColumnName)> ColumnIds = new List<(int, string)>();
-                for (int i = 0; i < size; i++)
-                {
-                    if (!newRecord)
-                    {
-                        Object value = _mNewValues[i];
-                        if (value != null
-                            && !p_info.IsVirtualColumn(i))
-                        {
-                            int ColumnId = p_info.GetColumn(i).AD_Column_ID;
-                            if (ColumnId > 0)
-                            {
-                                ColumnIds.Add((ColumnId, p_info.GetColumnName(i)));
-                            }
-                        }
-                    }
-                }
+                ExecuteWF();
                 if (newRecord)
                 {
-                    ExecuteAlert(newRecord, null, false);
-
+                    ExecuteAlert("insert");
                 }
-                else
-                {
-                    ExecuteAlert(newRecord, ColumnIds, false);
+                else {                
+                ExecuteAlert("update");
                 }
+                //	Copy to Old values
+                int size = p_info.GetColumnCount();
                 for (int i = 0; i < size; i++)
-                {
-                    if (!newRecord)
-                    {
-                        Object value = _mNewValues[i];
-                        if (value != null
-                            && !p_info.IsVirtualColumn(i))
-                        {
-                            int ColumnId = p_info.GetColumn(i).AD_Column_ID;
-                            if (ColumnId > 0)
-                            {
-                                ColumnIds.Add((ColumnId, p_info.GetColumnName(i)));
-                            }
-                        }
-                    }
+                {                 
                     if (_mNewValues[i] != null)
                     {
                         if (_mNewValues[i] == Null.NULL)
@@ -3592,7 +3560,7 @@ namespace VAdvantage.Model
             //	Reset
             if (success)
             {
-                ExecuteAlert(false, null,true);
+                ExecuteAlert("delete");
                 _idOld = 0;
                 int size = p_info.GetColumnCount();
                 _mOldValues = new Object[size];
@@ -5501,7 +5469,7 @@ namespace VAdvantage.Model
         /// <param name="IsDeleted">Is Deleted</param>
         /// <date>17 sep 2025</date>
         /// <writer>ruby</writer>
-        public void ExecuteAlert(bool newRecord, List<(int ColumnId, string ColumnName)> columnIds, bool IsDeleted)
+        public void ExecuteAlert(string eventType)
         {
             if (e_alertMgr == null)
             {
@@ -5516,7 +5484,7 @@ namespace VAdvantage.Model
             }
             if (e_alertMgr != null)
             {
-                e_alertMgr.Process(newRecord, this, p_info.getAD_Table_ID(), columnIds, IsDeleted);
+                e_alertMgr.Process(this, p_info, eventType);
             }
 
         }
