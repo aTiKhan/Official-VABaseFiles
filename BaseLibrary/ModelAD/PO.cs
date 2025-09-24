@@ -19,6 +19,7 @@ using VAdvantage.Logging;
 using VAdvantage.Print;
 using BaseLibrary.Engine;
 using System.Reflection;
+using VAdvantage.Alert;
 
 namespace VAdvantage.Model
 {
@@ -73,7 +74,9 @@ namespace VAdvantage.Model
         /**	Attachment with entriess	*/
         private dynamic _attachment = null;
         /** Document Value Workflow Manager		*/
-        private static DocWorkflowMgr s_docWFMgr = null;
+        private static DocWorkflowMgr s_docWFMgr = null; 
+
+        private static AlertEventMgr e_alertMgr = null;
 
         // Document Value Workflow message
         public string s_docWFMsg = "";
@@ -490,6 +493,17 @@ namespace VAdvantage.Model
         {
             s_docWFMgr = docWFMgr;
             s_log.Config(s_docWFMgr.ToString());
+        }
+
+        /// <summary>
+        ///Set AlertEvent Value for Alert Manager
+        /// </summary>
+        /// <param name="alertMgr">mgr</param>
+        /// <author>ruby</author>
+        public static void SetAlertEventMgr(AlertEventMgr alertMgr)
+        {
+            e_alertMgr = alertMgr;
+            s_log.Config(e_alertMgr.ToString());
         }
 
         /// <summary>
@@ -2530,7 +2544,7 @@ namespace VAdvantage.Model
                    )
                 {
                     Object oldV = _mOldValues[i];
-                    Object newV = value;
+                    Object newV = value;      
                     if ((oldV != null) && (oldV == Null.NULL))
                         oldV = null;
                     if ((newV != null) && (newV == Null.NULL))
@@ -2774,10 +2788,17 @@ namespace VAdvantage.Model
                 //if (s_docWFMgr != null)
                 //    s_docWFMgr.Process(this, p_info.getAD_Table_ID());
                 ExecuteWF();
+                if (newRecord)
+                {
+                    ExecuteAlert("insert");
+                }
+                else {                
+                ExecuteAlert("update");
+                }
                 //	Copy to Old values
                 int size = p_info.GetColumnCount();
                 for (int i = 0; i < size; i++)
-                {
+                {                 
                     if (_mNewValues[i] != null)
                     {
                         if (_mNewValues[i] == Null.NULL)
@@ -2786,7 +2807,7 @@ namespace VAdvantage.Model
                             _mOldValues[i] = _mNewValues[i];
                     }
                 }
-                _mNewValues = new Object[size];
+                _mNewValues = new Object[size];             
             }
 
 
@@ -3565,6 +3586,7 @@ namespace VAdvantage.Model
             //	Reset
             if (success)
             {
+                ExecuteAlert("delete");
                 _idOld = 0;
                 int size = p_info.GetColumnCount();
                 _mOldValues = new Object[size];
@@ -5461,6 +5483,34 @@ namespace VAdvantage.Model
             if (s_docWFMgr != null)
             {
                 s_docWFMgr.Process(this, p_info.getAD_Table_ID());
+            }
+
+        }
+
+        /// <summary>
+        /// Execute Alert Event 
+        /// </summary>
+        /// <param name="newRecord">Is New record</param>
+        /// <param name="columnIds">updated column Ids</param>
+        /// <param name="IsDeleted">Is Deleted</param>
+        /// <date>17 sep 2025</date>
+        /// <writer>ruby</writer>
+        public void ExecuteAlert(string eventType)
+        {
+            if (e_alertMgr == null)
+            {
+                try
+                {
+                    System.Reflection.Assembly asm = System.Reflection.Assembly.Load("ModelLibrary");
+                    e_alertMgr = (AlertEventMgr)asm.GetType("VAdvantage.Alert.AlertEventManager").GetMethod("Get").Invoke(null, null);
+                }
+                catch
+                {
+                }
+            }
+            if (e_alertMgr != null)
+            {
+                e_alertMgr.Process(this, p_info, eventType);
             }
 
         }
