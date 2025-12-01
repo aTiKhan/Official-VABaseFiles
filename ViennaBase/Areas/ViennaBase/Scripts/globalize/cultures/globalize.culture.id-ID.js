@@ -135,6 +135,9 @@ Globalize.addCultureInfo( "id-ID", "default", {
         "ResendOTP": "Kirim ulang OTP",
         "CapsLockOn": "Capslock aktif",
         "AccessNotGranted": "Akses tidak dapat diberikan. Silakan periksa kredensial atau akses sistem Anda.",
+        "VIS_ClickHere": "Klik di sini",
+        "VIS_QRText": "(Jika tidak terlihat ",
+        "VIS_QRText_Sub": "untuk memuat ulang kode QR)",
 	}
 });
 

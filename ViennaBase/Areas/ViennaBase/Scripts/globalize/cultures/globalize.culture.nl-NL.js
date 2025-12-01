@@ -136,6 +136,9 @@ Globalize.addCultureInfo( "nl-NL", "default", {
 		"ResendOTP": "OTP opnieuw verzenden",
 		"CapsLockOn": "Caps Lock staat aan",
 		"AccessNotGranted": "Er kan geen toegang worden verleend. Controleer uw inloggegevens of systeemtoegang.",
+		"VIS_ClickHere": "Klik hier",
+		"VIS_QRText": "(Voor het geval het niet zichtbaar is ",
+		"VIS_QRText_Sub": "om de QR-code opnieuw te laden)"
 	}
 
 });

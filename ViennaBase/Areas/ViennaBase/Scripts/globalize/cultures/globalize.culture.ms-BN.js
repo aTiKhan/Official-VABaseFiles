@@ -115,7 +115,10 @@ Globalize.addCultureInfo( "ms-BN", "default", {
             "VerifyUserLanguage": "Mengesahkan Bahasa Pengguna",
             "LoadingPreference": "memuatkan Keutamaan",
             "Completed": "siap",
-            "RememberMe": "Ingatkan saya",
+		"RememberMe": "Ingatkan saya",
+		"VIS_ClickHere": "Klik di sini",
+		"VIS_QRText": "(Sekiranya tidak kelihatan ",
+		"VIS_QRText_Sub": "untuk memuat semula kod QR)",
         }
 });
 

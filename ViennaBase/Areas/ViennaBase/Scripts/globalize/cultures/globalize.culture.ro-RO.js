@@ -116,7 +116,10 @@ Globalize.addCultureInfo( "ro-RO", "default", {
    "VerifyUserLanguage": "Verificarea de utilizator și limba",
    "LoadingPreference": "încărcarea Preferințe",
    "Completed": "terminat",
-   "RememberMe": "Ține-Mă Minte",
+		"RememberMe": "Ține-Mă Minte",
+		"VIS_ClickHere": "Apasă aici",
+		"VIS_QRText": "(În caz că nu este vizibil ",
+		"VIS_QRText_Sub": "pentru a reîncărca codul QR)",
 	}
 });
 

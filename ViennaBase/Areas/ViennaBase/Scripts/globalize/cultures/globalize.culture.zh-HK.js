@@ -137,6 +137,9 @@ Globalize.addCultureInfo( "zh-HK", "default", {
 		"ResendOTP": "Resend OTP",
 		"CapsLockOn": "Caps lock is on",
 		"AccessNotGranted": "Access cannot be granted. Please check your credentials or system access.",
+		"VIS_ClickHere": "點擊這裡",
+		"VIS_QRText": "（如未顯示",
+		"VIS_QRText_Sub": "重新載入 QR 碼）"
 	}
 });
 
