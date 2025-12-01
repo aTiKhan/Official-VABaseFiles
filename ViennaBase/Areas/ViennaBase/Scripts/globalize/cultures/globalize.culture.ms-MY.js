@@ -158,6 +158,9 @@ Globalize.addCultureInfo( "ms-MY", "default", {
         "ResendOTP": "Hantar semula OTP",
         "CapsLockOn": "Kunci topi dihidupkan",
         "AccessNotGranted": "Akses tidak boleh diberikan. Sila semak kelayakan atau akses sistem anda.",
+        "VIS_ClickHere": "Klik di sini",
+        "VIS_QRText": "(Sekiranya tidak kelihatan ",
+        "VIS_QRText_Sub": "untuk memuat semula kod QR)",
     }
 });
 

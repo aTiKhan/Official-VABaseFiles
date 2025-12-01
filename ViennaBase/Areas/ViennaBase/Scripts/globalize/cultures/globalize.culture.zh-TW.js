@@ -159,6 +159,9 @@ Globalize.addCultureInfo( "zh-TW", "default", {
 		"ResendOTP": "重新发送动态密码",
 		"CapsLockOn": "大寫鎖定已開啟",
 		"AccessNotGranted": "無法授予存取權限。請檢查您的憑證或系統存取權限。",
+		"VIS_ClickHere": "點擊這裡",
+		"VIS_QRText": "(如果無法顯示",
+		"VIS_QRText_Sub": "重新載入 QR 碼)"
 	}
 });
 

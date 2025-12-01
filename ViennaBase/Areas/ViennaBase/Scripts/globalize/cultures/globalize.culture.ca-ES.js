@@ -114,7 +114,10 @@ Globalize.addCultureInfo( "ca-ES", "default", {
     "SelectRole": "Seleccioneu Paper",
     "SelectOrg": "Seleccioneu Organització",
     "SelectClient": "Seleccioneu Inquilí",
-    "RememberMe": "Recordeu-vos De Mi",
+		"RememberMe": "Recordeu-vos De Mi",
+		"VIS_ClickHere": "Fes clic aquí",
+		"VIS_QRText": "(En cas que no sigui visible",
+		"VIS_QRText_Sub": "per tornar a carregar el codi QR)",
 	}
 });
 

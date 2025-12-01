@@ -149,6 +149,9 @@ Globalize.addCultureInfo( "sq-AL", "default", {
         "ResendOTP": "Ridërgo OTP -në",
         "CapsLockOn": "Caps lock është aktiv",
         "AccessNotGranted": "Qasja nuk mund të jepet. Ju lutemi kontrolloni kredencialet tuaja ose aksesin e sistemit.",
+        "VIS_ClickHere": "Kliko këtu",
+        "VIS_QRText": "(Në rast se nuk shihet ",
+        "VIS_QRText_Sub": "për të rifreskuar kodin QR)"
     }
 });
 

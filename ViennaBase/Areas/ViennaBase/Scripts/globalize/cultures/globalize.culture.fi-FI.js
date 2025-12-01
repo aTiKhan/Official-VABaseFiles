@@ -137,6 +137,9 @@ Globalize.addCultureInfo( "fi-FI", "default", {
 		"ResendOTP": "Lähetä OTP uudelleen",
 		"CapsLockOn": "CAPS LOCK on päällä",
 		"AccessNotGranted": "Käyttöoikeutta ei voida myöntää. Tarkista kirjautumistietosi tai järjestelmän käyttöoikeus.",
+		"VIS_ClickHere": "Klikkaa tästä",
+		"VIS_QRText": "(Jos ei näy ",
+		"VIS_QRText_Sub": "ladataksesi QR-koodin uudelleen)",
 	}
 });
 

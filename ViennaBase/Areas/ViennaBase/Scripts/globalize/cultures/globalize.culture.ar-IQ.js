@@ -525,6 +525,9 @@ Globalize.addCultureInfo( "ar-IQ", "default", {
         "ResendOTP": "إعادة إرسال OTP",
         "CapsLockOn": "الحروف الكبيرة مفعلة",
         "AccessNotGranted": "لا يمكن منح الوصول. يرجى التحقق من بيانات الاعتماد الخاصة بك أو الوصول إلى النظام.",
+        "VIS_ClickHere": "انقر هنا",
+        "VIS_QRText": "(في حال لم يكن مرئيًا)",
+        "VIS_QRText_Sub": "لإعادة تحميل رمز الاستجابة السريعة)",
     }
 });
 

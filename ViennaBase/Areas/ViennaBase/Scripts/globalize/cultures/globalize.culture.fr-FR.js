@@ -138,6 +138,9 @@
             "ResendOTP": "Renvoyer OTP",
             "CapsLockOn": "Touche Maj activée",
             "AccessNotGranted": "L'accès ne peut pas être accordé. Veuillez vérifier vos informations d'identification ou votre accès au système.",
+            "VIS_ClickHere": "Cliquez ici",
+            "VIS_QRText": "(Au cas où ce ne serait pas visible ",
+            "VIS_QRText_Sub": "pour recharger le code QR)",
         }
 });
 
