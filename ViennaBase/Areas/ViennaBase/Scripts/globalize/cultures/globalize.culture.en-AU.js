@@ -115,6 +115,9 @@
             "ResendOTP": "Resend OTP",
             "CapsLockOn": "Caps lock is on",
             "AccessNotGranted": "Access cannot be granted. Please check your credentials or system access.",
+            "VIS_ClickHere": "Click Here",
+            "VIS_QRText": "(In case it’s not visible ",
+            "VIS_QRText_Sub": "to reload the QR code)",
         }
     });
 

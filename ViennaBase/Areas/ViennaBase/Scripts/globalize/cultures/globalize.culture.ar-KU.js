@@ -499,7 +499,10 @@
 
     "LoadingPreference": "دانانی هه لبژارده",
     "Completed": "ته واو کرا",
-    "RememberMe": "بیرهێنانەوە",
+            "RememberMe": "بیرهێنانەوە",
+            "VIS_ClickHere": "کرتە لێرە بکە",
+            "VIS_QRText": "(لەوانەیە دیار نەبێت",
+            "VIS_QRText_Sub": "بۆ دووبارە بارکردنی کۆدی QR)",
 }
     });
 

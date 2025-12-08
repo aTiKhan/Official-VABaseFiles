@@ -465,6 +465,9 @@
 			"LoadingPreference": "در حال بارگذاری اولویت",
 			"Completed": "تکمیل شده",
 			"RememberMe": "ذخیره",
+			"VIS_ClickHere": "اینجا کلیک کنید",
+			"VIS_QRText": "(در صورت عدم نمایش",
+			"VIS_QRText_Sub": "برای بارگذاری مجدد کد QR)",
 		}
 	});
 

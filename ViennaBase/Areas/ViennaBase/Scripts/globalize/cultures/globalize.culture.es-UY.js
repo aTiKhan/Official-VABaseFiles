@@ -137,6 +137,9 @@ Globalize.addCultureInfo( "es-UY", "default", {
 		"ResendOTP": "Reenviar OTP",
 		"CapsLockOn": "Bloqueo de mayúsculas está activado",
 		"AccessNotGranted": "No se puede conceder el acceso. Por favor verifique sus credenciales o acceso al sistema.",
+		"VIS_ClickHere": "Hacé clic aquí",
+		"VIS_QRText": "(En caso de que no se vea ",
+		"VIS_QRText_Sub": "para recargar el código QR)",
 	}
 });
 

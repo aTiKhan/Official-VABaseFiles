@@ -501,7 +501,10 @@ Globalize.addCultureInfo( "ar-TN", "default", {
 	    "LoadingPreference": "تحميل",
 	    "Completed": "الانتهاء",
 	    "DefaultLoginLanguage": "ar_IQ",
-	    "RememberMe": "تذكرنى",
+        "RememberMe": "تذكرنى",
+        "VIS_ClickHere": "إكبس هنا",
+        "VIS_QRText": "(في حال ما يبانش",
+        "VIS_QRText_Sub": "باش تعاود تحميل رمز الـQR)",
 	}
 });
 
