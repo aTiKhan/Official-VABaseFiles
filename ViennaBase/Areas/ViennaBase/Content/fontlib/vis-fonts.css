@@ -1589,3 +1589,11 @@
 .vis-copy-folder:before {
     content: "\e9ea";
 }
+
+.vis-lead-analysis:before {
+    content: "\ea8a";
+}
+
+.vis-atk:before {
+    content: "\ea8b";
+}
