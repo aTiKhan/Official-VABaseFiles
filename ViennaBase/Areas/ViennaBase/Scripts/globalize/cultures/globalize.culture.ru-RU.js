@@ -122,7 +122,10 @@ Globalize.addCultureInfo( "ru-RU", "default", {
     "VerifyUserLanguage": "Проверка пользователя и языка",
     "LoadingPreference": "загрузка предпочтения",
     "Completed": "завершенный",
-    "RememberMe": "Запомнить Меня",
+		"RememberMe": "Запомнить Меня",
+		"VIS_ClickHere": "Нажмите здесь",
+		"VIS_QRText": "(Если не отображается ",
+		"VIS_QRText_Sub": "чтобы перезагрузить QR-код)",
         }
 });
 

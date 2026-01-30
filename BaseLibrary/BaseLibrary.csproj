@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert\AlertEventMgr.cs" />
     <Compile Include="Audit\MActionLog.cs" />
     <Compile Include="Audit\MChangeLog.cs" />
     <Compile Include="Audit\MQueryLog.cs" />
@@ -230,5 +231,6 @@
   <ItemGroup>
     <None Include="Connected Services\CloudService\Service.disco" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

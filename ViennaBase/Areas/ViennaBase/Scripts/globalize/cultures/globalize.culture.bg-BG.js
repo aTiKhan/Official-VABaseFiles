@@ -119,7 +119,10 @@ Globalize.addCultureInfo( "bg-BG", "default", {
 
    "LoadingPreference":"Зареждане на предпочитания",
    "Completed": "завършен",
-   "RememberMe": "Запомни ме",
+		"RememberMe": "Запомни ме",
+		"VIS_ClickHere": "„Кликнете тук“",
+		"VIS_QRText": "„(В случай че не се вижда“",
+		"VIS_QRText_Sub": "„за презареждане на QR кода)“",
 	}
 });
 

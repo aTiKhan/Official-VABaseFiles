@@ -136,7 +136,10 @@ Globalize.addCultureInfo( "da-DK", "default", {
 		"SkipThisTime": "Spring denne gang over",
 		"ResendOTP": "Send OTP igen",
 		"CapsLockOn": "Caps Lock er på",
-		"AccessNotGranted":"Der kan ikke gives adgang. Tjek venligst dine legitimationsoplysninger eller systemadgang.",
+		"AccessNotGranted": "Der kan ikke gives adgang. Tjek venligst dine legitimationsoplysninger eller systemadgang.",
+		"VIS_ClickHere": "Klik her",
+		"VIS_QRText": "(Hvis det ikke er synligt",
+		"VIS_QRText_Sub": "for at genindlæse QR-koden)",
 	}
 });
 

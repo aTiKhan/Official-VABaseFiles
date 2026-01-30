@@ -143,6 +143,9 @@
             "ResendOTP": "Reinvia OTP",
             "CapsLockOn": "Blocco maiuscolo attivo",
             "AccessNotGranted": "Impossibile concedere l'accesso. Controlla le tue credenziali o l'accesso al sistema.",
+            "VIS_ClickHere": "Clicca qui",
+            "VIS_QRText": "(Nel caso non sia visibile ",
+            "VIS_QRText_Sub": "per ricaricare il codice QR)",
         }
     });
 

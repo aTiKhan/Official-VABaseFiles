@@ -147,6 +147,9 @@ Globalize.addCultureInfo( "sv-SE", "default", {
         "ResendOTP": "Skicka om OTP",
         "CapsLockOn": "Caps Lock är på",
         "AccessNotGranted": "Tillträde kan inte beviljas. Kontrollera dina autentiseringsuppgifter eller systemåtkomst.",
+        "VIS_ClickHere": "Klicka här",
+        "VIS_QRText": "(Om det inte syns ",
+        "VIS_QRText_Sub": "för att ladda om QR-koden)"
 	}
 });
 

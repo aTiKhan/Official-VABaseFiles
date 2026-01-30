@@ -139,6 +139,9 @@ Globalize.addCultureInfo( "sl-SI", "default", {
 		"ResendOTP": "Znova pošljite OTP",
 		"CapsLockOn": "Caps Lock je vklopljen",
 		"AccessNotGranted": "Dostopa ni mogoče odobriti. Preverite svoje poverilnice ali dostop do sistema.",
+		"VIS_ClickHere": "Kliknite tukaj",
+		"VIS_QRText": "(Če ni vidno ",
+		"VIS_QRText_Sub": "za ponovni nalaganje QR kode)",
 	}
 });
 

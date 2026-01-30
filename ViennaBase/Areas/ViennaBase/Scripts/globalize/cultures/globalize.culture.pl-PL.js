@@ -144,6 +144,9 @@
             "ResendOTP": "Wyślij ponownie OTP",
             "CapsLockOn": "Caps Lock jest włączony",
             "AccessNotGranted": "Nie można przyznać dostępu. Sprawdź swoje dane uwierzytelniające lub dostęp do systemu.",
+            "VIS_ClickHere": "Kliknij tutaj",
+            "VIS_QRText": "(Jeśli nie jest widoczne ",
+            "VIS_QRText_Sub": "aby ponownie załadować kod QR)"
 }
 });
 

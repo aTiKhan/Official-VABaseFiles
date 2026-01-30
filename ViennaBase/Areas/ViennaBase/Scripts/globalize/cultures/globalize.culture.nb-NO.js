@@ -137,6 +137,9 @@ Globalize.addCultureInfo( "nb-NO", "default", {
 		"ResendOTP": "Send OTP på nytt",
 		"CapsLockOn": "Caps Lock er på",
 		"AccessNotGranted": "Tilgang kan ikke gis. Vennligst sjekk påloggingsinformasjonen din eller systemtilgang.",
+		"VIS_ClickHere": "Klikk her",
+		"VIS_QRText": "(Hvis det ikke er synlig ",
+		"VIS_QRText_Sub": "for å laste inn QR-koden på nytt)",
 	}
 });
 

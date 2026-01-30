@@ -139,6 +139,9 @@
             "ResendOTP": "Reenviar OTP",
             "CapsLockOn": "Bloqueo de mayúsculas está activado",
             "AccessNotGranted": "No se puede conceder el acceso. Por favor verifique sus credenciales o acceso al sistema.",
+            "VIS_ClickHere": "Haz clic aquí",
+            "VIS_QRText": "(En caso de que no sea visible ",
+            "VIS_QRText_Sub": "para recargar el código QR)",
         }
 
     });

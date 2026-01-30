@@ -145,6 +145,9 @@
             "ResendOTP": "OTP erneut senden",
             "CapsLockOn": "Die Feststelltaste ist aktiviert",
             "AccessNotGranted": "Der Zugriff kann nicht gewährt werden. Bitte überprüfen Sie Ihre Zugangsdaten bzw. Ihren Systemzugang.",
+            "VIS_ClickHere": "Hier klicken",
+            "VIS_QRText": "(Falls nicht sichtbar",
+            "VIS_QRText_Sub": "um den QR-Code neu zu laden)",
 }
 
 });

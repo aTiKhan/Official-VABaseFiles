@@ -495,7 +495,10 @@ Globalize.addCultureInfo( "ar-SA", "default", {
 	    "LoadingPreference": "تفضيلات التحميل",
 	    "Completed": "اكتمل",
 	    "DefaultLoginLanguage": "ar_SA",
-	    "RememberMe": "تذكرني",
+        "RememberMe": "تذكرني",
+        "VIS_ClickHere": "انقر هنا",
+        "VIS_QRText": "(في حال عدم الظهور",
+        "VIS_QRText_Sub": "لإعادة تحميل رمز الاستجابة السريعة)",
 	}
 });
 
